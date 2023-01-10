@@ -10,6 +10,6 @@ def index():
 
 @app.route("/admin2")
 def index():
-    return render_template("admin2.html")
+    return render_template("Admin2.wav")
     
 app.run()
