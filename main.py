@@ -7,9 +7,5 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     return render_template("index.html")
-
-@app.route("/admin2")
-def index():
-    return render_template("Admin2.wav")
     
 app.run()
