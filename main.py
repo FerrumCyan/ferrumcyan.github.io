@@ -9,7 +9,7 @@ def index():
 def index():
     return render_template("/index.html")
 #VIP{
-@app.route("/a")
+@app.route("/比特股")
 def index():
     return render_template("/VIP/魏在宸/index.html")
 }
