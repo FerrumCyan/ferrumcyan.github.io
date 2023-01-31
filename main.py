@@ -4,13 +4,9 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     return render_template("/index.html")
+#英文主页
+@app.route("/en")
+def index():
+    return render_template("/English/index.htmll")
 
-@app.route("/框架")
-def index():
-    return render_template("/Basic.html")
-#VIP{
-@app.route("/a")
-def index():
-    return render_template("/VIP/魏在宸/index.html")
-#}
 app.run()
