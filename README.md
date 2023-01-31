@@ -1,3 +1,4 @@
 # ferrumcyan.github.io
-the FerrumCyan website
-铁皮青网
+Welcom to the FerrumCyan website! 
+
+欢迎访问铁皮青网!
