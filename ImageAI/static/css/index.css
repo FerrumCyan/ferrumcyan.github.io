@@ -1,0 +1,70 @@
+body{margin: 0 auto;background-color:#F6F9FF;}
+.top{position:relative;}
+.top img{width:100%;}
+
+form{
+    position: absolute;
+    top: 53%;
+    transform: translate(-50%);
+    left: 50%;
+    font-size:2vw;
+}
+
+inputinput[type="radio"]{
+    margin-left: 1vw;
+}
+
+
+.upload{
+    height:7.2vw;
+    background:url('/static/images/upload.png') center 0 no-repeat;
+    background-size: 28vw;
+    margin-top: 2.5vw;
+    text-align: center;
+}
+.imgfile{
+    width:70%;
+    margin:0 auto;
+    height:7.2vw;
+    opacity: 0;
+    display: block;
+}
+
+
+.content{position:relative;}
+.content img{width:100%;}
+.content p{
+    color:rgb(79,117,178);
+    position: absolute;
+    margin-bottom: -2em;
+    font-size:1.1vw; 
+    transform: translate(-50%);
+    left: 50%;
+}
+
+.show{
+    position: absolute;
+    transform: translate(-50%);
+    left: 50%;
+    top: 19%;
+    width:50%
+    overflow: hidden;;
+}
+
+.oldimg, .newimg{
+    border-radius:10px ;
+    overflow: hidden;
+    height: 27vw;
+    
+    
+}
+.oldimg img, .newimg img{
+    width: 100%;
+}
+.oldimg{
+    display: none;
+}
+
+.texiao{
+    display: none;
+}
