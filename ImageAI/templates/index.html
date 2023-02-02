@@ -1,0 +1,50 @@
+<html>
+  <head lang="zh-cn">
+    <meta charset="utf-8">
+    <title>工具 - 铁皮青</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.6.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/saomiao.css">
+    <script src="https://cdn.staticfile.org/jquery/3.2.1/jquery.min.js"></script>
+    <script src="/static/js/1.js"></script>
+  </head>
+<body onload="change()">
+    <div class="top">
+        <img src="/static/images/top.png">
+        <form action="/change" method="post" enctype="multipart/form-data">
+            <input type="radio" name="style" value="gothic" checked="checked">哥特
+            <input type="radio" name="style" value="cartoon" >卡通
+            <input type="radio" name="style" value="warm" >彩色糖块
+            <input type="radio" name="style" value="wave" >神奈川冲浪里
+    		<input type="radio" name="style" value="mononoke">奇异
+    		<div class="upload">
+               <input type="file" name="photo" class="imgfile" onChange="javascript:this.form.submit()">
+            </div>
+        </form>
+    </div>
+    
+    
+    <!--内容-->
+    <div class="content">
+        <img src="/static/images/content.png">
+        
+        <div class="renlian">
+            <div class="box">
+              <div class="line"></div>
+            </div>
+        </div>
+
+        <div class="show">
+            <div class="oldimg">
+                <img src="{{urls[0]}}">
+            </div>
+            <div class="newimg">
+                <img src="{{urls[1]}}">
+            </div>
+        </div>
+        
+
+        <p>Copyright <a href="https://ferrumcyan.github.io/">FerrumCyan Corporation Limited T1-T2</a></p>
+    </div>
+</body>
+</html>
