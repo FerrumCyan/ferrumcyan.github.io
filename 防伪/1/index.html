@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>防伪 - 铁皮青</title>
+<link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
+<script>
+  // 在页面加载时执行
+  window.onload = function() {
+    // 获取存储在本地存储中的访问次数，如果不存在则初始化为0
+    let visitCount = parseInt(localStorage.getItem('visitCount')) || 0;
+
+    // 更新访问次数显示
+    const visitCountElement = document.getElementById('visitCount');
+    visitCountElement.textContent = visitCount;
+
+    // 增加访问次数，并将其存储在本地存储中
+    visitCount++;
+    localStorage.setItem('visitCount', visitCount.toString());
+  };
+</script>
+</head>
+  <body>
+  <h1>欢迎访问铁皮青网！</h1>
+  <p>本链接第<span id="visitCount">0</span>次被访问，如果这个数大于5，证明您购买了盗版产品。</p>
+  <button><a href="/"><h3 style="color:rgb(0,0,255)">返回主页</h3></a></button>
+  <p style="font-weight:normal;position:fixed;bottom:0px;left:0px;">版权所有 <a href="/" style="color:rgb(0,0,255)">铁皮青有限公司</a> 正0001~正0002<br>Copyright <a href="/" style="color:rgb(0,0,255)">FerrumCyan</a> Corporation Limited T0001-T0002</p>
+</body>
+</html>
