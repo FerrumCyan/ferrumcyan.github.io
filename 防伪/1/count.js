@@ -1,7 +1,7 @@
 // 获取当前访问次数
 function getCount() {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "count_cgi.py?action=get", false);
+    xhr.open("GET", "/get_count", false);
     xhr.send();
     return parseInt(xhr.responseText);
 }
@@ -9,7 +9,7 @@ function getCount() {
 // 更新访问次数
 function updateCount() {
     var xhr = new XMLHttpRequest();
-    xhr.open("GET", "count_cgi.py?action=update", false);
+    xhr.open("GET", "/update_count", false);
     xhr.send();
     return parseInt(xhr.responseText);
 }
