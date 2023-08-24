@@ -1,15 +1,22 @@
 // 获取当前访问次数
 function getCount() {
-    var count = localStorage.getItem("visitCount");
-    return count ? parseInt(count) : 0;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", "count.py?action=get", false);
+    xhr.send();
+    return parseInt(xhr.responseText);
 }
 
 // 更新访问次数
 function updateCount() {
-    var count = getCount() + 1;
-    localStorage.setItem("visitCount", count);
-    document.getElementById("count").textContent = count;
+    var xhr = new XMLHttpRequest();
+    xhr.open("POST", "count.py?action=update", false);
+    xhr.send();
+    return parseInt(xhr.responseText);
 }
 
 // 页面加载完成时更新访问次数
-window.onload = updateCount;
+window.onload = function () {
+    var count = getCount();
+    document.getElementById("count").textContent = count;
+    updateCount(); // 更新访问次数
+};
