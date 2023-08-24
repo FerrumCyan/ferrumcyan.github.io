@@ -1,25 +1,19 @@
 // 获取当前访问次数
 function getCount() {
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "/get_count", true); // 设置异步为true
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
-            document.getElementById("count").textContent = xhr.responseText;
-        }
-    };
-    xhr.send();
+    fetch("/get_count")
+        .then(response => response.text())
+        .then(count => {
+            document.getElementById("count").textContent = count;
+        });
 }
 
 // 更新访问次数
 function updateCount() {
-    var xhr = new XMLHttpRequest();
-    xhr.open("GET", "/update_count", true); // 设置异步为true
-    xhr.onreadystatechange = function() {
-        if (xhr.readyState === XMLHttpRequest.DONE && xhr.status === 200) {
+    fetch("/update_count")
+        .then(response => response.text())
+        .then(newCount => {
             getCount(); // 更新访问次数显示
-        }
-    };
-    xhr.send();
+        });
 }
 
 // 页面加载完成时更新访问次数
