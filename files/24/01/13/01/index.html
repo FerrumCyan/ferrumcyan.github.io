@@ -3,6 +3,13 @@
   <meta charset="utf-8">
   <title>文件 - 铁皮青</title>
   <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
+  <script>
+    console.log(navigator);
+    if (navigator.userAgent.indexOf("Opera")>-1||navigator.userAgent.indexOf("OPR")>-1) {
+      alert("请使用其他浏览器访问本网站。")
+      location.href = "/403.html";
+    }
+  </script>
 </head>
 <body>
   <h1>欢迎访问铁皮青网！</h1>
