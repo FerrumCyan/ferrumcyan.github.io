@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-cn"><head>
+  <meta charset="utf-8">
+  <title>人机验证 - 铁皮青</title>
+  <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
+  <script>
+    console.log(navigator);
+    if (navigator.userAgent.indexOf("Opera")>-1||navigator.userAgent.indexOf("OPR")>-1) {
+      alert("请使用其他浏览器访问本网站。")
+      location.href = "/403.html";
+    }
+  </script>
+</head>
+<body>
+	<h1>获取'23012901号验证码请点击按钮。</h1>
+	<input type="button" onclick="test()" value="点击查看">
+	<p id="captcha">等待输入字符串。验证码是：457284-******。</p>
+	<h2>谢谢配合。</h2>
+	<script>
+		function test(){
+			var x; 
+			var name=prompt("请输入验证码索求框提供的三位字符串","三位大写字母");
+			if(name=="ZFD"){
+				document.getElementById("captcha").innerHTML="字符串输入正确。验证码是：457284-312347。";
+				alert("字符串输入正确。验证码是：457284-312347");
+			}
+			else{
+				document.getElementById("captcha").innerHTML="字符串输入错误。验证码是：457284-******。";
+				alert("字符串输入错误。验证码是：457284-******");
+			}
+		}
+	</script>
+  <button><a href="/"><h3 style="color:rgb(0,0,255)">返回主页</h3></a></button>
+  <p style="font-weight:normal;position:fixed;bottom:0px;left:0px;">版权所有 <a href="/" style="color:rgb(0,0,255)">铁皮青有限公司</a> 2019-<script>document.write(new Date().getFullYear());</script>2024<br>Copyright <a href="/" style="color:rgb(0,0,255)">FerrumCyan</a> Corporation Limited 2019-<script>document.write(new Date().getFullYear());</script>2024</p>
+
+
+</body></html>
