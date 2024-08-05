@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="utf-8">
+    <title>铁皮青网主页 - 铁皮青</title>
+    <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <script>
+        console.log(navigator);
+        if (navigator.userAgent.indexOf("Opera") > -1 || navigator.userAgent.indexOf("OPR") > -1) {
+            alert("请使用其他浏览器访问本网站。")
+            location.href = "/403.html";
+        }
+    </script>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="logo">
+            <a href="/"><img src="/logo.ico" alt="铁皮青" class="logo-icon"> 铁皮青 FerrumCyan</a>
+        </div>
+        <div class="nav-menu">
+            <div class="dropdown">
+                <a href="/software/" class="nav-button">软件产品</a>
+                <div class="dropdown-content">
+                    <a href="/tools/">网页工具</a>
+                    <a href="/app/s">应用程序</a>
+                </div>
+            </div>
+            <a href="/media" class="nav-button">传媒文化</a>
+            <a href="/about/" class="nav-button">关于铁青</a>
+            <a href="/others/" class="nav-button">其他网页</a>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="image-container">
+            <img src="/FerrumCyan.png" alt="铁皮青">
+            <h1>欢迎访问铁皮青网！</h1>
+        </div>
+    </div>
+    <div class="footer">
+        版权所有 <a href="/" style="color:rgb(0,0,255)">铁皮青有限公司</a> 2019-<script>document.write(new Date().getFullYear());</script><br/>
+        Copyright <a href="/" style="color:rgb(0,0,255)">FerrumCyan</a> Corporation Limited 2019-<script>document.write(new Date().getFullYear());</script>
+    </div>
+</body>
+</html>
