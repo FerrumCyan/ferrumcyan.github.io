@@ -1,0 +1,134 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f0f0f0; /* 背景颜色 */
+}
+
+.top-bar {
+    background-color: rgba(255, 255, 255, 0.9); /* 顶部栏背景颜色，带透明度 */
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+
+.top-bar a {
+    text-decoration: none;
+    color: #333;
+    margin: 0 15px;
+    border: 1px solid #e0e0e0; /* 特浅灰色边框 */
+    border-radius: 5px; /* 1像素圆角 */
+    padding: 5px 10px;
+    transition: background-color 0.5s ease-in-out;
+}
+
+.top-bar a:hover {
+    background-color: #f0f0f0; /* 悬停时的背景颜色 */
+}
+
+.top-bar .logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    display: flex;
+    align-items: center;
+    border: none; /* 去掉 logo 链接的边框 */
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+}
+
+.nav-menu .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f8f8f8;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    backdrop-filter: blur(5px); /* 毛玻璃效果 */
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    opacity: 1;
+}
+
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.main-content {
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+}
+
+.image-container img {
+    width: 300px;
+    height: 300px;
+    margin-right: 50px;
+}
+
+.image-container h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* 底部背景颜色，带透明度 */
+    position: fixed;
+    width: 100%;
+    bottom: -60px; /* 使其隐藏在页面之外 */
+    left: 0;
+    color: #bbb;
+    transition: bottom 0.3s ease-in-out, color 0.3s ease-in-out;
+    backdrop-filter: blur(5px); /* 毛玻璃效果 */
+}
+
+.footer a {
+    color: #bbb;
+    text-decoration: none;
+}
+
+.footer:hover {
+    bottom: 0; /* 悬停时上移到页面内 */
+    color: #333;
+}
+
+.footer:hover a {
+    color: rgb(0,0,255);
+}
