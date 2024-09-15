@@ -1,0 +1,227 @@
+<html lang="zh-cn">
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: #333;
+      background-color: #f0f0f0;
+    }
+
+    a {
+      color:#0000FF
+    }
+    
+    .top-bar {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo-icon {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+
+    .top-bar a, .top-bar a:visited, .top-bar a:active {
+      text-decoration: none;
+      color: #333;
+      margin: 0 15px;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      padding: 5px 10px;
+      transition: background-color 0.5s ease-in-out;
+    }
+
+    .top-bar a:hover {
+      background-color: #f0f0f0;
+    }
+
+    .top-bar .logo a {
+      font-size: 24px;
+      font-weight: bold;
+      color: #000;
+      display: flex;
+      align-items: center;
+      border: none;
+    }
+
+    .nav-menu {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-menu .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      font-size: 12px;
+      display: none;
+      position: absolute;
+      background-color: #f8f8f8;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+      z-index: 1;
+      opacity: 0;
+      transition: opacity 0.5s ease-in-out;
+      backdrop-filter: blur(5px);
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+      opacity: 1;
+    }
+
+    .dropdown-content a, .dropdown-content a:visited, .dropdown-content a:active {
+      color: #333;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .main-content {
+      padding: 50px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .download-section {
+      width: 30%;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .download-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .download-section a, .download-section a:visited, .download-section a:active {
+      display: block;
+      margin: 10px 0;
+      padding: 10px;
+      text-decoration: none;
+      color: white;
+      background-color: #007bff;
+      border-radius: 5px;
+      text-align: center;
+      transition: background-color 0.3s ease-in-out;
+    }
+
+    .download-section a:hover {
+      background-color: #0056b3;
+    }
+
+    .history-section {
+      width: 65%;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 10px;
+    }
+
+    .history-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .history-list {
+      list-style: none;
+      padding: 0;
+    }
+
+    .history-list li {
+      margin-bottom: 15px;
+      border-bottom: 1px solid #e0e0e0;
+      padding-bottom: 10px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.9);
+      position: fixed;
+      width: 100%;
+      bottom: -60px;
+      left: 0;
+      color: #bbb;
+      transition: bottom 0.3s ease-in-out, color 0.3s ease-in-out;
+      backdrop-filter: blur(5px);
+    }
+
+    .footer a, .footer a:visited, .footer a:active {
+      color: #bbb;
+      text-decoration: none;
+    }
+
+    .footer:hover {
+      bottom: 0;
+      color: #333;
+    }
+
+    .footer:hover a {
+      color: rgb(0, 0, 255);
+    }
+  </style>
+  <meta charset="utf-8">
+  <title>铁皮青软件下载 - 铁皮青</title>
+  <link rel="shortcut icon" href="/logo.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="top-bar">
+    <div class="logo">
+      <a href="/"><img src="/logo.ico" alt="铁皮青" class="logo-icon"> 铁皮青 FerrumCyan</a>
+    </div>
+    <div class="nav-menu">
+      <div class="dropdown">
+        <a href="/" class="nav-button">返回</a>
+        <div class="dropdown-content">
+          <a href="/">主页</a>
+          <a href="/software/">软件</a>
+          <a href="/software/win_calculator/">铁皮青计算器</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="download-section">
+      <h2>下载最新版</h2>
+      <a href="https://vip.123pan.cn/1813471484/10456744">铁皮青计算器 1.1.1.0<br/>.exe 安装包<br/>Windows 10 及以上</a> <!-- 最新版的下载链接 -->
+    </div>
+
+    <div class="history-section">
+      <h2>历史版本</h2>
+      <ul class="history-list">
+        <li>
+          <a href="https://vip.123pan.cn/1813471484/10456744">铁皮青计算器 1.1.1.0</a> <!-- 历史版本的下载链接 -->
+          <p>发布日期: 2024年9月15日</p>
+          <p>版本类型: <a href="https://vip.123pan.cn/1813471484/10456744">.exe 安装包</a></p>
+          <p>兼容系统: Windows 10 及以上</p>
+        </li>
+        <!-- 可以继续添加更多历史版本 -->
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer">
+    版权所有 <a href="/" style="color:rgb(0,0,255)">铁皮青</a> 2019-<script>document.write(new Date().getFullYear());</script><br>
+    Copyright <a href="/" style="color:rgb(0,0,255)">FerrumCyan</a> 2019-<script>document.write(new Date().getFullYear());</script><br>
+  </div>
+
+</body>
+</html>
